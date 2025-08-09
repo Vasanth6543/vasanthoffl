@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vasanth • Official</title>
+  <meta name="description" content="Vasanth — Electronics Engineer | Python | AI | Web Dev" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-anim"></div>
+
+  <header class="topbar">
+    <div class="brand">vasanth<span class="dot">offl</span></div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme"><i class="fa fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section id="about" class="hero reveal">
+      <div class="glass">
+        <div class="left">
+          <img src="images/profile.jpg" alt="Vasanth profile" class="profile">
+        </div>
+        <div class="right">
+          <h1>Hi, I'm <span>Vasanth</span></h1>
+          <p class="lead">Electronics Engineer · Python · AI · Web Development</p>
+          <p>I build embedded projects and AI-backed web apps. Welcome to my official space — clean, fast, and personal.</p>
+          <div class="ctas">
+            <a class="btn" href="#projects">My Projects</a>
+            <a class="btn ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">Arduino / ESP32</div>
+        <div class="skill">HTML · CSS · JS</div>
+        <div class="skill">PyTorch / ML</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Smart Lock project">
+          <h3>Smart Locking System</h3>
+          <p>ESP32-based smart lock with keypad, I2C LCD & servo control.</p>
+        </article>
+        <!-- add more project-card blocks as needed -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="row">
+          <label><input name="name" type="text" placeholder="Your name" required></label>
+          <label><input name="_replyto" type="email" placeholder="Email" required></label>
+        </div>
+        <label><textarea name="message" rows="5" placeholder="Message" required></textarea></label>
+        <div class="row">
+          <button type="submit" class="btn">Send</button>
+          <div id="formMsg" aria-live="polite" class="form-msg"></div>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Vasanth • Built with ❤️</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
