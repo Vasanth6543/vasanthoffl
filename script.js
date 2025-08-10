@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
   // contact form AJAX (Formspree)
+  window.addEventListener('load', () => {
+  const overlay = document.getElementById('welcomeOverlay');
+  setTimeout(() => {
+    if (overlay) overlay.remove();
+  }, 4500); // Matches your animation duration (3.5s delay + 1s fade)
+});
   const form = document.getElementById('contactForm');
   const msg = document.getElementById('formMsg');
   if (form) {

@@ -1,3 +1,47 @@
+/* Welcome overlay - full screen */
+#welcomeOverlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg1); /* matches your theme start */
+  background: linear-gradient(120deg, var(--bg1), var(--bg2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeOutOverlay 1s ease forwards;
+  animation-delay: 3.5s; /* Show for 3.5 seconds, then fade out */
+  user-select: none;
+  text-align: center;
+}
+
+/* Optional subtle fade-in on text */
+.welcomeText {
+  animation: fadeInText 1.5s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutOverlay {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 :root{
   --bg1:#ff7eb3; --bg2:#65d6ce; --glass: rgba(255,255,255,0.12);
   --accent: #ffd166; --muted: rgba(255,255,255,0.7);
